@@ -50,7 +50,8 @@ header h1{
     padding: 15px;
     height: 200px;
     background-image: url(../img/pattern.png);
-    background-size: contain;    
+    background-size: contain;   
+    position: relative; 
 }
 
 .card img{
@@ -66,6 +67,14 @@ header h1{
 .card:hover{
     background-image: none;
     background-color: #fff;
+}
+
+.card .caption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    font-size: 25px;
 }
 /* FINE SINGOLE CARD */
 
