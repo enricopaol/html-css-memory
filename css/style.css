@@ -23,6 +23,7 @@ header h1{
     text-align: center;
     color: white;
     font-size: 55px;
+    text-shadow: 2px 2px #554c4c;
 }
 /* FINE HEADER */
 
@@ -49,21 +50,20 @@ header h1{
     background-image: url(../img/pattern.png);
     background-size: contain;   
     position: relative; 
-    border-radius: 5px;
+    border-radius: 10px;
     border: 2px solid #4b9db8;
 }
 
 .card img{
-    display:block;
     width: 100%;
     display: none;
 }
 
-.card:hover img{
+.card:hover img, .card.active img, .card.active .caption {
     display: block;
 }
 
-.card:hover{
+.card:hover, .active{
     background-image: none;
     background-color: #fff;
 }
@@ -83,5 +83,13 @@ header h1{
     color: #e78025;
 }
 /* FINE SINGOLE CARD */
+
+/* FOOTER */
+footer{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* FINE FOOTER */
 
 
