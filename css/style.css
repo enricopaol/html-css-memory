@@ -19,10 +19,6 @@ body{
 /* FINE BODY E CONTAINER*/
 
 /* HEADER */
-header{
-    background-color:green;
-}
-
 header h1{
     text-align: center;
     color: white;
@@ -30,15 +26,16 @@ header h1{
 }
 /* FINE HEADER */
 
+/* CARDS BOX */
+.cards{
+    margin: 10px 0;
+}
+/* FINE CARDS BOX */
+
 /* ROW */
 .row {
     text-align: center;
-    padding: 15px;
-
-
-    /* test */
-    background-color: blue;
-
+    padding: 5px;
 }
 /* FINE ROW */
 
@@ -52,6 +49,8 @@ header h1{
     background-image: url(../img/pattern.png);
     background-size: contain;   
     position: relative; 
+    border-radius: 5px;
+    border: 2px solid #4b9db8;
 }
 
 .card img{
@@ -75,6 +74,13 @@ header h1{
     left: 0;
     width: 100%;
     font-size: 25px;
+    display: none;
+    color: #e61986;
+}
+
+.card:hover .caption {
+    display: block;
+    color: #e78025;
 }
 /* FINE SINGOLE CARD */
 
