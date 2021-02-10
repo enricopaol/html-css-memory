@@ -45,12 +45,27 @@ header h1{
 /* SINGOLE CARD */
 .card {
     width: 20%;
-    height: 80px;
     display: inline-block;
     margin: 0 10px;
+    padding: 15px;
+    height: 200px;
+    background-image: url(../img/pattern.png);
+    background-size: contain;    
+}
 
-    /* test */
-    background-color: red;
+.card img{
+    display:block;
+    width: 100%;
+    display: none;
+}
+
+.card:hover img{
+    display: block;
+}
+
+.card:hover{
+    background-image: none;
+    background-color: #fff;
 }
 /* FINE SINGOLE CARD */
 
