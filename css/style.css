@@ -46,7 +46,6 @@ header h1{
     display: inline-block;
     margin: 0 10px;
     padding: 15px;
-    height: 200px;
     background-image: url(../img/pattern.png);
     background-size: contain;   
     position: relative; 
@@ -56,11 +55,12 @@ header h1{
 
 .card img{
     width: 100%;
-    display: none;
+    visibility: hidden;
+    margin-bottom:25px;
 }
 
 .card:hover img, .card.active img, .card.active .caption {
-    display: block;
+    visibility: visible;
 }
 
 .card:hover, .active{
@@ -74,12 +74,12 @@ header h1{
     left: 0;
     width: 100%;
     font-size: 25px;
-    display: none;
+    visibility:hidden;
     color: #e61986;
 }
 
 .card:hover .caption {
-    display: block;
+    visibility: visible;
     color: #e78025;
 }
 /* FINE SINGOLE CARD */
